@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Centro Médico y Bienestar Vitalis - Registro</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f7f4; color: #333; margin: 0; padding: 20px; }
+        .container { max-width: 600px; margin: 40px auto; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        h2 { color: #0077b6; text-align: center; margin-bottom: 25px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; font-weight: 600; margin-bottom: 5px; color: #03045e; }
+        input, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        button { background-color: #0077b6; color: white; border: none; padding: 12px; width: 100%; font-size: 16px; border-radius: 5px; cursor: pointer; font-weight: bold; margin-top: 10px; }
+        button:hover { background-color: #03045e; }
+        .link-dashboard { text-align: center; margin-top: 15px; }
+        .link-dashboard a { color: #00b4d8; text-decoration: none; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Centro Médico Vitalis - Registro de Servicios</h2>
+        <form method="POST">
+            <div class="form-group">
+                <label>Nombre del Paciente:</label>
+                <input type="text" name="nombre" required placeholder="Ej. Camila Vargas">
+            </div>
+            <div class="form-group">
+                <label>Edad:</label>
+                <input type="number" name="edad" required min="1" max="120" placeholder="Ej. 32">
+            </div>
+            <div class="form-group">
+                <label>Ciudad:</label>
+                <select name="ciudad" required>
+                    <option value="Bogotá">Bogotá</option>
+                    <option value="Medellín">Medellín</option>
+                    <option value="Cali">Cali</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Servicio Médico:</label>
+                <select name="servicio" required>
+                    <option value="Medicina General">Medicina General</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Nutrición">Nutrición</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Costo del Servicio (COP):</label>
+                <input type="number" name="costo_servicio" required placeholder="Ej. 120000">
+            </div>
+            <div class="form-group">
+                <label>Nivel de Satisfacción (1 al 5):</label>
+                <input type="number" name="satisfaccion" required min="1" max="5" placeholder="Ej. 5">
+            </div>
+            <button type="submit">Registrar y Ver Dashboard</button>
+        </form>
+        <div class="link-dashboard">
+            <a href="/dashboard">Ver Dashboard Analítico &rarr;</a>
+        </div>
+    </div>
+</body>
+</html>

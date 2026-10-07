@@ -1,0 +1,13 @@
+id_paciente,nombre,edad,ciudad,servicio,costo_servicio,satisfaccion
+1,Ana Pérez,28,Bogotá,Medicina General,120000.0,5
+2,Carlos Gómez,45,Medellín,Cardiología,250000.0,4
+3,María Rodríguez,34,Bogotá,Nutrición,90000.0,5
+4,Luis Torres,52,Cali,Cardiología,260000.0,3
+5,Elena Ruiz,29,Medellín,Medicina General,115000.0,4
+6,Jorge Díaz,61,Cali,Cardiología,240000.0,5
+7,Sofía Castro,38,Bogotá,Nutrición,95000.0,4
+8,Mateo Morales,42,Medellín,Medicina General,130000.0,4
+9,Lucía Rojas,25,Cali,Nutrición,90000.0,5
+10,Diego Silva,50,Bogotá,Cardiología,255000.0,3
+11,asd,23,Medellín,Cardiología,12000.0,2
+12,camila,14,Bogotá,Medicina General,5000.0,4
